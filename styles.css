@@ -390,8 +390,11 @@ footer small {
   }
 
   .cta button {
-    padding: 1.4em 5em;
+    /* padding: 1.2em 4em; */
+    padding: 1.2em calc(0.7vw + 1.5em);
+    max-width: 70%;
     font-size: 0.8em;
+    font-size: calc(1vw + 0.3em);
   }
 
   .footer-container > img {
