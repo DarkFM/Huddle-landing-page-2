@@ -297,11 +297,13 @@ footer small {
 }
 
 /************** Styles for desktop/tablet devices **************/
-@media (min-width: 376px) {
+@media (min-width: 415px) {
 
-  .container {
-    max-width: 1440px;
+  div.container,
+  main.container,
+  footer.container {
     margin: auto;
+    padding: 3rem 1rem;
   }
 
   .bg-wrapper {
@@ -361,6 +363,7 @@ footer small {
 
   .img-container {
     flex: 0 1 35%;
+    align-self: center;
     margin: 0;
   }
 
@@ -377,7 +380,7 @@ footer small {
   }
 
   .tile-content > p {
-    font-size: 1.11em;
+    font-size: 0.8rem;
   }
 
   .cta {
@@ -395,6 +398,10 @@ footer small {
     max-width: 70%;
     font-size: 0.8em;
     font-size: calc(1vw + 0.3em);
+  }
+
+  footer.container {
+    padding-top: 10em;
   }
 
   .footer-container > img {
@@ -456,11 +463,45 @@ footer small {
 
 }
 
-@media (min-width: 500px), (min-width: 600px ) {
+@media (min-width: 700px) {
+
+  .first-section div h1 {
+    font-size: 1.5em;
+  }
+
+  .first-section h1 + p {
+    font-size: 1em;
+  }
+
   .navigation-links {
     height: 90px;
     font-size: 0.7em;
   }
 
+  .tile-content > p {
+    font-size: 1.6em;
+  }
+
+  .tile-content h2 {
+    font-size: 2em;
+  }
+
+  div.container,
+  main.container,
+  footer.container {
+    margin: auto;
+    padding: 3em 4.6em;
+  }  
+
+  footer.container {
+    padding-top: 10em;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 699px) {
+
+  .first-section > div:nth-child(2) {
+    align-self: center;
+  }
 
 }
